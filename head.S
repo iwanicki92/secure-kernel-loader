@@ -319,7 +319,7 @@ GLOBAL(skinit_reserved)
 
 #ifdef __x86_64__
 	/* 64bit Pagetables, identity map of the first 4G of RAM. */
-	.section .bss.page_data, "aw", @nobits
+	.section .bss..page_data, "aw", @nobits
 .align PAGE_SIZE
 
 l1_identmap: /* 1x L1 page, mapping 2M of RAM. */
